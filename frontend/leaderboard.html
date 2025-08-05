@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Portal - Leaderboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Intern Portal</h1>
+        <p id="welcomeMessage">Welcome back, Alex Johnson!</p>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="leaderboard.html" class="active">Leaderboard</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="leaderboard-container">
+        <h1>Leaderboard</h1>
+        <p>See how our interns are performing</p>
+
+        <section class="top-performers">
+            <h2>Top Performers</h2>
+            <p>Our highest achieving interns</p>
+            
+            <div class="top-performers-grid" id="topPerformers">
+                <!-- Top performers will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section class="full-rankings">
+            <h2>Full Rankings</h2>
+            <p>Complete leaderboard standings</p>
+            
+            <div class="rankings-list" id="rankingsList">
+                <!-- Full rankings will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Portal - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Intern Portal</h1>
+        <p id="welcomeMessage">Welcome back, Alex Johnson!</p>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="profile-section">
+            <h2>Alex Johnson</h2>
+            <p id="userEmail">alex.johnson@example.com</p>
+            <p id="joinedDate">Joined 15/01/2024</p>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Raised</h3>
+                    <p id="totalRaised">$15,420</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Rewards Unlocked</h3>
+                    <p id="rewardsUnlocked">3/5</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Referrals Made</h3>
+                    <p id="referralsMade">6</p>
+                </div>
+                <div class="stat-card">
+                    <h3>New Goal</h3>
+                    <p id="newGoal">$25,000</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rewards-section">
+            <h2>Rewards & Achievements</h2>
+            <div class="rewards-container" id="rewardsContainer">
+                <!-- Rewards will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

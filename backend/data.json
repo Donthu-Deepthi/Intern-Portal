@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alex Johnson",
+      "email": "alexjohnson@example.com",
+      "referralCode": "ALEX2025",
+      "totalRaised": 15420,
+      "joinedDate": "2024-01-15",
+      "rewardsUnlocked": 3,
+      "referralsMade": 6,
+      "newGoal": 25000
+    }
+  ],
+  "rewards": [
+    {
+      "id": 1,
+      "name": "Welcome Package",
+      "description": "Starter kit with branded merchandise",
+      "requiredAmount": 50,
+      "unlocked": true
+    },
+    {
+      "id": 2,
+      "name": "Gold Leader",
+      "description": "Leadership workshop + mentorship program",
+      "requiredAmount": 25000,
+      "unlocked": true
+    },
+    {
+      "id": 3,
+      "name": "Bronze Achiever",
+      "description": "Special certificate and digital badge",
+      "requiredAmount": 5000,
+      "unlocked": true
+    },
+    {
+      "id": 4,
+      "name": "Platinum Elite",
+      "description": "Executive dinner + conference ticket",
+      "requiredAmount": 50000,
+      "unlocked": false
+    },
+    {
+      "id": 5,
+      "name": "Silver Champion",
+      "description": "Premium swap pack + exclusive webinar access",
+      "requiredAmount": 15000,
+      "unlocked": true
+    }
+  ],
+  "leaderboard": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "referralCode": "SARAH2025",
+      "totalRaised": 22350,
+      "position": "Champion"
+    },
+    {
+      "id": 2,
+      "name": "Michael Rodriguez",
+      "referralCode": "MKE2025",
+      "totalRaised": 18900,
+      "position": "Runner-up"
+    },
+    {
+      "id": 3,
+      "name": "Alex Johnson",
+      "referralCode": "ALEX2025",
+      "totalRaised": 15420,
+      "position": "Third Place"
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "referralCode": "EMILY2025",
+      "totalRaised": 12750,
+      "referralsMade": 5,
+      "joinedDate": "2024-01-25"
+    },
+    {
+      "id": 5,
+      "name": "David Kim",
+      "referralCode": "DAVID2025",
+      "totalRaised": 9500,
+      "referralsMade": 3,
+      "joinedDate": "2024-02-01"
+    }
+  ],
+  "stats": {
+    "activeInterns": 500,
+    "totalRaised": 2500000,
+    "rewardsAvailable": 50,
+    "successRate": 98
+  }
+}
