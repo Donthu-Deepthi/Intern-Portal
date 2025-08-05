@@ -1,198 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intern Portal - Empower Your Fundraising Journey</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <style>
-        :root {
-            --primary: #4361ee;
-            --secondary: #3f37c9;
-            --accent: #4895ef;
-            --dark: #1b263b;
-            --light: #f8f9fa;
-            --success: #4cc9f0;
-            --warning: #f72585;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--accent);
-            color: white;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            margin: 10px;
-        }
-        
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .stats-section {
-            padding: 60px 0;
-            text-align: center;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-        
-        .stat-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .stat-card h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-        
-        .achievement-card {
-            background: linear-gradient(135deg, var(--accent), var(--success));
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 500px;
-            margin: 40px auto;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(67, 97, 238, 0.2);
-        }
-        
-        .achievement-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .achievement-card p {
-            font-size: 1.8rem;
-            font-weight: 600;
-        }
-        
-        section {
-            padding: 60px 0;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            color: var(--dark);
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .btn {
-                display: block;
-                margin: 10px auto;
-                width: 80%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InternPortal | Fundraising Platform</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container hero">
-            <h1>Empower Your Fundraising Journey</h1>
-            <p>Join our intern portal and start making a real impact. Track your progress, unlock amazing rewards, and compete with fellow interns in a gamified fundraising experience.</p>
-            <a href="login.html" class="btn">Sign In to Portal</a>
-        </div>
-    </header>
 
-    <section class="stats-section">
-        <div class="container">
-            <h2>Start Your Journey</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h2>500+</h2>
-                    <p>Active Interns</p>
-                </div>
-                <div class="stat-card">
-                    <h2>$2.5M+</h2>
-                    <p>Total Raised</p>
-                </div>
-                <div class="stat-card">
-                    <h2>50+</h2>
-                    <p>Rewards Available</p>
-                </div>
-                <div class="stat-card">
-                    <h2>98%</h2>
-                    <p>Success Rate</p>
-                </div>
-            </div>
-            
-            <div class="achievement-card">
-                <h3>Achievement Unlocked!</h3>
-                <p>Silver Champion</p>
-                <p>$15,420 Raised</p>
-                <p>This month</p>
-            </div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">InternPortal</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Leaderboard</a></li>
+      <li><a href="#">Testimonials</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a class="nav-cta" id="openAuthModal">Get Started</a>
+  </nav>
+
+   <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Login to Your Account</h2>
+        <button class="close-btn" onclick="closeModal('loginModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email">
         </div>
-    </section>
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password">
+        </div>
+        <div class="auth-toggle">
+          Don't have an account? <a href="#" onclick="switchToSignup()">Sign up</a>
+        </div>
+        <div class="social-login">
+          <p>Or continue with</p>
+          <div class="social-icons">
+            <div class="social-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('loginModal')">Cancel</button>
+        <button class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Create New Account</h2>
+        <button class="close-btn" onclick="closeModal('signupModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" class="form-control" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email Address</label>
+          <input type="email" id="signupEmail" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" class="form-control" placeholder="Create a password">
+        </div>
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" class="form-control" placeholder="Confirm your password">
+        </div>
+        <div class="auth-toggle">
+          Already have an account? <a href="#" onclick="switchToLogin()">Login</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('signupModal')">Cancel</button>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Empower Your <span class="highlight">Fundraising</span> Journey</h1>
+        <p>Join our intern portal and make a difference. Track your progress, compete with peers, and unlock rewards while raising funds for meaningful causes.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="openModal()">
+            <i class="fas fa-rocket"></i> Get Started
+          </button>
+          <button class="btn btn-outline">
+            <i class="fas fa-play-circle"></i> Watch Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose InternPortal?</h2>
+        <p>Everything you need to track, compete, and succeed in your fundraising journey</p>
+      </div>
+      <div class="feature-cards">
+        <div class="card">
+          <div class="card-icon blue">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Real-time Tracking</h3>
+          <p>Monitor your fundraising progress with live updates and detailed analytics to optimize your campaign performance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Competitive Leaderboard</h3>
+          <p>Compete with fellow interns and climb the fundraising leaderboard to showcase your achievements.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon orange">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>Rewards & Recognition</h3>
+          <p>Unlock exclusive rewards, certificates, and recognition as you reach important fundraising milestones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-number" data-count="1250">0</div>
+          <div class="stat-label">Active Interns</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="250000">0</div>
+          <div class="stat-label">Funds Raised</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Campaigns</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-count="10000">0</div>
+          <div class="stat-label">Rewards Unlocked</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>InternPortal</h3>
+          <p>Empowering interns to make a difference through fundraising for meaningful causes.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul class="footer-links">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <ul class="footer-links">
+            <li><i class="fas fa-envelope"></i> hello@internportal.com</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Fundraising St, San Francisco</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 InternPortal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="signinModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Welcome Back</h2>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          <a href="#" style="color: var(--primary); text-decoration: none;">Forgot password?</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal()">Cancel</button>
+        <button class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Modal (shown after login) -->
+  <div class="modal" id="dashboardModal">
+    <div class="modal-content" style="max-width: 800px;">
+      <div class="modal-header">
+        <h2>Intern Dashboard</h2>
+        <button class="close-btn" onclick="closeModal('dashboardModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="dashboard-grid">
+          <div class="dashboard-card profile-card">
+            <div class="card-icon blue">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3 id="internName">Loading...</h3>
+            <p>Intern Profile</p>
+            <div class="referral-code">
+              <span>Your Referral Code:</span>
+              <strong id="referralCode">XXXXXX</strong>
+              <button class="btn btn-outline btn-sm" onclick="copyReferralCode()">
+                <i class="fas fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+          
+          <div class="dashboard-card stats-card">
+            <div class="card-icon green">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>Funds Raised</h3>
+            <div class="stat-number" id="fundsRaised">$0</div>
+            <p>Your total contributions</p>
+            <button class="btn btn-primary btn-sm" onclick="shareProgress()">
+              <i class="fas fa-share-alt"></i> Share Progress
+            </button>
+          </div>
+          
+          <div class="dashboard-card rewards-card">
+            <div class="card-icon orange">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Your Rewards</h3>
+            <div class="rewards-list">
+              <div class="reward-item">
+                <i class="fas fa-medal" style="color: #FFD700;"></i>
+                <span>Top 10 Fundraiser</span>
+              </div>
+              <div class="reward-item">
+                <i class="fas fa-certificate" style="color: #2563eb;"></i>
+                <span>Certificate of Excellence</span>
+              </div>
+              <div class="reward-item">
+                <i class="fas fa-gift" style="color: #f59e0b;"></i>
+                <span>Exclusive Swag Pack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="leaderboard-section">
+          <h3>Top Fundraisers</h3>
+          <div class="leaderboard" id="leaderboard">
+            <!-- Leaderboard will be populated by JS -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('dashboardModal')">Close</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
